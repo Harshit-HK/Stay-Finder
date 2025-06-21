@@ -2,6 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import { AppContext } from "../context/AppContext";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const MyBookings = () => {
   const { backendUrl, token, listings } = useContext(AppContext);
@@ -16,7 +17,7 @@ const MyBookings = () => {
         const res = await axios.get(`${backendUrl}/api/listings`);
         setLists(res.data.listings || []);
       } catch (err) {
-        console.error("Backend listings fetch failed", err);
+        toast.error(`Backend listings fetch failed: ${err}`);
       }
     };
 
@@ -30,7 +31,7 @@ const MyBookings = () => {
       });
       setBookings(res.data.user.bookings || []);
     } catch (error) {
-      console.error("Booking fetch error", error);
+      toast.error(`Booking fetch error: ${error}`);
     }
   };
 

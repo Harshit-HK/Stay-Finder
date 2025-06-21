@@ -1,7 +1,8 @@
-import React, { useEffect, useState, useContext } from "react";
+import { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import { AppContext } from "../context/AppContext";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const HomeBackend = () => {
   const { backendUrl, currency ,searchQuery} = useContext(AppContext);
@@ -14,7 +15,7 @@ const HomeBackend = () => {
         const res = await axios.get(`${backendUrl}/api/listings`);
         setListings(res.data.listings || []);
       } catch (err) {
-        console.error("Backend listings fetch failed", err);
+        toast.error(`Backend listings fetch failed: ${err}`);
       }
     };
 

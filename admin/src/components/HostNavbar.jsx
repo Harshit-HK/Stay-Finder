@@ -16,7 +16,9 @@ function HostNavbar() {
 
   const isBookingDetailPage = location.pathname.startsWith("/bookings/");
   const isProfile = location.pathname.startsWith("/profile");
+  const isLogin = location.pathname.startsWith("/login");
 
+  if (isLogin) return null;
   return (
     <nav
       className={`${

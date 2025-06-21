@@ -50,7 +50,6 @@ export const HostProvider = ({ children }) => {
 
       if (res.data.success) {
         setListings(res.data.listings);
-        console.log(res.data.listings);
       } else {
         toast.info(res.data.message);
       }
@@ -92,6 +91,7 @@ export const HostProvider = ({ children }) => {
 
   useEffect(() => {
     fetchBookings();
+    navigate("/login");
   }, []);
 
   const value = {

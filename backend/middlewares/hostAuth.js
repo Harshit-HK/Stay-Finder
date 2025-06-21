@@ -11,7 +11,6 @@ export const hostAuthMiddleware = async (req, res, next) => {
     req.hostId = decoded.id;
     next();
   } catch (err) {
-    console.error("Host auth error:", err);
     return res.status(401).json({ success: false, message: "Invalid or expired token" });
   }
 };

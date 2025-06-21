@@ -11,8 +11,6 @@ const HostListingDetail = () => {
 
   const { id } = useParams();
   const listing = listings.find((list) => list._id === id);
-  console.log(listing);
-
   const handleDelete = async () => {
     if (!window.confirm("Are you sure you want to delete this listing?"))
       return;
@@ -35,7 +33,6 @@ const HostListingDetail = () => {
         toast.error(res.data.message);
       }
     } catch (err) {
-      console.error(err);
       toast.error("Failed to delete listing");
     }
   };
