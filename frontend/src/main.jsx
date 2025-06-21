@@ -12,8 +12,6 @@ const loadMapScript = () => {
 
   const googleKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 
-
-
   if (googleKey) {
     script.src = `https://maps.googleapis.com/maps/api/js?key=${googleKey}&libraries=places`;
   }else {
