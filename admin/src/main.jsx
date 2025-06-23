@@ -12,9 +12,13 @@ const loadMapScript = () => {
   const script = document.createElement("script");
 
   const googleKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+  const goMapsKey = import.meta.env.VITE_GOMAPS_API_KEY;
+  const goMapsBase = import.meta.env.VITE_GOMAPS_BASE;
 
   if (googleKey) {
     script.src = `https://maps.googleapis.com/maps/api/js?key=${googleKey}&libraries=places`;
+  } else if (goMapsKey && goMapsBase) {
+    script.src = `${goMapsBase}?key=${goMapsKey}&libraries=places`;
   } else {
     toast.error("No Maps API key provided!");
     return;
@@ -26,7 +30,7 @@ const loadMapScript = () => {
   document.head.appendChild(script);
 };
 
-loadMapScript();
+// loadMapScript();
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>

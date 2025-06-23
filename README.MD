@@ -31,8 +31,6 @@ A full-stack villa/hotel/resort booking web application built with:
 
 `/server` – Backend AP
 
-
-
 # 📌 StayFinder – Full-Stack Hotel/Villa/Resort Booking Web App
 
 **StayFinder** is a full-stack booking platform designed for customers to explore and book stays at various hotels, villas, and resorts. The application supports **multi-host functionality** allowing multiple property owners (hosts) to list their accommodations and manage bookings independently.
