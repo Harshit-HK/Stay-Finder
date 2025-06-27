@@ -3,7 +3,7 @@ __Please read the README.md file in each folder carefully to avoid confusion or 
 
 ## 🧑‍💻 Just Want to Try the Frontend Without Hassle? 
 
-If you only wish to explore the frontend UI without configuring the backend & database, you can run the frontend independently — however, features like login & payments will not function.
+If you only wish to explore the frontend UI without configuring the backend & database, you can run the frontend independently — however, features like login & payments will not functional.
 
 🚀 Frontend is live here: [Stay Finder User pannel - Live Link](https://stay-finder-deployed-blny4ky2u.vercel.app)
 
