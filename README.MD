@@ -5,6 +5,11 @@ __Please read the README.md file in each folder carefully to avoid confusion or 
 
 If you only wish to explore the frontend UI without configuring the backend & database, you can run the frontend independently — however, features like login & payments will not function.
 
+🚀 Frontend is live here: [Stay Finder User pannel - Live Link](https://stay-finder-deployed-blny4ky2u.vercel.app)
+
+🚀 Host is live here: [Stay Finder User pannel - Live Link](https://stay-finder-deployed-nps7.vercel.app)
+
+
  ## 🧠 Project overview
  
 A full-stack villa/hotel/resort booking web application built with:
