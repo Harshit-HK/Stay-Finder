@@ -7,7 +7,7 @@ If you only wish to explore the frontend UI without configuring the backend & da
 
 🚀 Frontend is live here: [Stay Finder User pannel - Live Link](https://stay-finder-deployed-blny4ky2u.vercel.app)
 
-🚀 Host is live here: [Stay Finder User pannel - Live Link](https://stay-finder-deployed-nps7.vercel.app)
+🚀 Host is live here: [Stay Finder Host pannel - Live Link](https://stay-finder-deployed-nps7.vercel.app)
 
 
  ## 🧠 Project overview
